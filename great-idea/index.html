@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/index.css">
   <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -19,21 +19,76 @@
   <body>
 
     <!-- Copy and paste your HTML from the first UI project here -->
-    <section class="mainContainer">
-      <!--START - Top nav code-->
-      <nav class="topnav main-nav ">
-        <a class="navItem grow" href="#services">Services</a>
-        <a class="navItem grow" href="#product">Product</a>
-        <a class="navItem grow" href="#vision" >Vision</a>
-        <a class="navItem grow" href="#features">Features</a>
-        <a class="navItem grow" href="#about">About</a>
-        <a class="navItem grow" href="#contact">Contact</a>
-        <div class="topRightLogo">
-          
-        </div>
+    
+    <!--START - Top nav code-->
+    <div class="wrapper">
+        <nav class="topnav">
+          <ul>
+            <li><a class="navItem grow" href="#services">Services</a></li>
+            <li><a class="navItem grow" href="#product">Product</a></li>
+            <li><a class="navItem grow" href="#vision">Vision</a></li>
+            <li><a class="navItem grow" href="#features">Features</a></li>
+            <li><a class="navItem grow" href="#about">About</a></li>
+            <li><a class="navItem grow" href="#contact">Contact</a></li>   
+          </ul>
+            <ul>
+              <li class="topRightLogo"></li>
+              
+            </ul>
+        </nav>
         
-      </nav>
+        <nav id="topnavRD_close" class="topnavRD_closed">
+            <ul>
+
+            </ul>
+              <ul>
+                <li class="topRightLogo"></li>
+                <li class="buttonRD">
+                    <button onclick="myFunction()" class="bars grow " href="#navigation-main" aria-label="Skip to main navigation">
+                        <i class="fa fa-bars fa-4x" aria-hidden="true"></i>
+                    </button>
+                </li>
+                
+              </ul>
+          </nav>
+
+          <nav id="topnavRD_open" class="topnavRD_open">
+              <ul>
+                <li><a class="navItem grow" href="#services">Services</a></li>
+                <li><a class="navItem grow" href="#product">Product</a></li>
+                <li><a class="navItem grow" href="#vision">Vision</a></li>
+                <li><a class="navItem grow" href="#features">Features</a></li>
+                <li><a class="navItem grow" href="#about">About</a></li>
+                <li><a class="navItem grow" href="#contact">Contact</a></li>   
+              </ul>
+                <ul>
+                  <li class="topRightLogo"></li>
+                  <li class="buttonRD">
+                      <button onclick="myFunction()" class="bars grow " href="#navigation-main" aria-label="Skip to main navigation">
+                          <i class="fa fa-bars fa-4x" aria-hidden="true"></i>
+                      </button>
+                  </li>
+                  
+                </ul>
+            </nav>
+      </div>
+      
+     
+      <script>
+        function myFunction() {
+          var x = document.getElementById("topnavRD_open");
+          if (x.style.display === "none") {
+            x.style.display = "flex";
+          } else {
+            x.style.display = "none";
+          }
+          
+        }
+
+      </script>
       <!--END - Top nav code-->
+    
+    <section class="mainContainer">
       <!--START - Top section code-->
       <section class="topSection">
         <div class="slogan testLeft">
