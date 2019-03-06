@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5 {
 .mainContainer{
 	margin-left:70px;
 	margin-right:70px;
-	border: solid blue 1px;
+	
 }
 
 /* START - Top Nav CSS */
@@ -181,28 +181,30 @@ h1, h2, h3, h4, h5 {
 	.topnavRD_closed{
 		display: none;
 	}
+
+	.logo-right{
+		margin-right: 30px;
+	}
 	
 }
 
 @media screen and (max-width: 944px){
 	.topSection{
 		display: flex;
-		border: 1px solid red;
+		
 		flex-direction: column;	
+		
 	}
 	.slogan{
-		border: 1px solid black;
-		justify-content: center;
-		flex: 1 0 auto;
-		width: 100%;
-		margin-top: 200px;
+		
+		align-self: center;
 		min-width: 256px;
 	}
 	.logo-right{
-		border: 1px solid black;
-		flex: 1 0 auto;
+		
+		align-self: center;
 		width: 397px;
-		justify-content: center;
+		margin-right: 0px;
 		min-width: 382px;
 	}
 	.circle{
@@ -215,14 +217,16 @@ h1, h2, h3, h4, h5 {
 	.topSectionLeft{
 		align-self: center;
 		justify-self: center;
-		margin: 0 auto;
+		min-width: 500px;
 		padding: 0;
+		
 	}
 
 	.topSectionRight{
 		align-self: center;
 		justify-self: center;
-
+		min-width: 500px;
+		padding: 0;
 	}
 
 	.botMainSection{
@@ -232,17 +236,20 @@ h1, h2, h3, h4, h5 {
 
 	.botSectionLeft{
 		align-self: center;
-		border: 1px solid black;
+		
+		min-width: 500px;
 	}
 
 	.botSectionCenter{
 		margin: auto;
-		border: 1px solid black;
+		
+		min-width: 500px;
 	}
 
 	.botSectionRight{
 		align-self: center;
-		border: 1px solid black;
+		
+		min-width: 500px;
 	}
 
 }
@@ -298,14 +305,14 @@ h1, h2, h3, h4, h5 {
 	padding-top: 60px;
 	margin-left: 0px;
 	display: flex;
-	
+	justify-content: space-around;
 }
 
 .slogan{
 	text-align: center;
 	font-size: 60px;
 	margin-top: 100px;
-	margin: auto;
+	
 	width: 175px;
 	flex:1;
 }
@@ -341,8 +348,9 @@ h1, h2, h3, h4, h5 {
 	background-position: right top;
 	width: 379px;
 	height: 379px;
-  
-	margin: auto;
+	
+  flex: 1 auto;
+	
 }
 
 .circle {
@@ -367,17 +375,13 @@ hr{
 
 .topSectionLeft{
 	width: 49%;
-	padding-top:10px;
-	padding-bottom: 15px;
-	padding-right: 10px;	
+	padding: 10px;	
 		
 }
 
 .topSectionRight{
 	width: 50%;
-	padding-top:10px;
-	padding-bottom: 15px;
-	padding-left: 10px;
+	padding: 10px;
 		
 }
 
@@ -388,6 +392,8 @@ hr{
 .botSectionLeft{
 	width:33%;
 	padding-top:10px;
+	padding-left:10px;
+	padding-right:10px;
 	padding-bottom: 15px;
 	flex: 1 0 auto;
 }
@@ -403,6 +409,8 @@ hr{
 .botSectionRight{
 	width:33%;
 	padding-top:10px;
+	padding-left:10px;
+	padding-right:10px;
 	padding-bottom: 15px;
 	flex: 1 0 auto;
 }
