@@ -1,14 +1,18 @@
 main{
-    margin-left: 30px;
-    margin-right: 30px;
+    
 }
 
-.center{
+.services-info-img{
     padding-top: 0px;
-    border: solid 1px red;
+   
     margin: auto;
-    width: 1100px;
+    align-self: flex-end;
     
+}
+
+.baseDocMargin{
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 header{
@@ -19,25 +23,147 @@ header{
 
 .myArticle{
     padding: 20px;
-    border: solid 1px red;
+    
 }
-
-.gridContainer{
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
+article a{
+    text-decoration: none;
+    padding-left:10px;
+    padding-right:10px;
+    color: black;
 }
 
 .card{
     border: solid 1px black;
-    background-color: lightgray;
+    background-color: rgb(236, 236, 236);
     padding: 10px;
+    width: 75%;
+    align-self: center;
+    
 }
 
 .myhr{
-    with: 100%;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 footer li{
     list-style-type: square;
 }
+
+/*==START===== Default Margin Classes =========*/
+.defaultFlexMargin{
+    margin: 40px 40px 40px 40px;
+}
+
+/*==END===== Default Margin Classes =========*/
+
+/*==START===== Default Padding Classes =========*/
+.defaultFlexPadding{
+    margin: 10px 10px 10px 10px;
+}
+
+/*==END===== Default Padding Classes =========*/
+
+/*==START===== Flex Classes ==========*/
+
+
+.flexContainer{ /*default flex container with wrapping items*/
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+	max-width: 1400px;	
+}
+
+.flexColumnContainer{
+    display: flex;
+    flex-direction: column;    
+}
+
+.flexItem{
+    flex-wrap: wrap;
+    
+    
+}
+
+.twoColFlexItem{
+    flex-wrap: wrap;
+    
+    flex: 1 1; 
+}
+
+.flexCenterTest{
+    align-self: center;
+    margin: auto;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.flexLeftTest{
+    align-self: flex-start;
+    
+    width: 45%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.flexRightText{
+    align-self: flex-end;
+    
+    width: 45%;
+    margin-top: 10px;
+}
+
+.bottomRightPic{
+    align-self: flex-end;
+    
+    width: 45%;
+    margin-top: 10px;  
+    margin-left: 20px;
+    padding-right: 10px;
+}
+
+
+
+
+/*==END===== Flex Classes ==========*/
+
+
+.myBtn{
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 40px;
+}
+
+.leftMainColumn{
+    margin-left: 18px;
+}
+
+.rightMainColumn{
+    margin-right: 18px;
+}
+
+/*==START===== Media Queries =====*/
+@media screen and (min-width: 767px){
+    .flexItem{
+        flex: 1;   
+    }
+
+    
+}
+
+@media screen and (max-width: 767px){
+    .leftMainColumn{
+        margin-left: 0px;
+    }
+    
+    .rightMainColumn{
+        margin-right: 0px;
+    }
+}
+
+/*==END===== Media Queries =====*/

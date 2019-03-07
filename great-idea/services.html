@@ -32,7 +32,7 @@
             <li><a class="navItem grow" href="#contact">Contact</a></li>   
           </ul>
             <ul>
-                <a href="http://127.0.0.1:5500/great-idea/index.html"><li class="topRightLogo"></li></a>
+                <a href="index.html"><li class="topRightLogo"></li></a>
               
             </ul>
         </nav>
@@ -42,7 +42,7 @@
 
             </ul>
               <ul>
-                <a href="http://127.0.0.1:5500/great-idea/index.html"><li class="topRightLogo"></li></a>
+                <a href="index.html"><li class="topRightLogo"></li></a>
               
                 <li class="buttonRD">
                     <button onclick="myFunction()" class="bars grow " href="#navigation-main" aria-label="Skip to main navigation">
@@ -55,7 +55,7 @@
 
           <nav id="topnavRD_open" class="topnavRD_open">
               <ul>
-                <li><a class="navItem grow" href="http://127.0.0.1:5500/great-idea/services.html">Services</a></li>
+                <li><a class="navItem grow" href="services.html">Services</a></li>
                 <li><a class="navItem grow" href="#product">Product</a></li>
                 <li><a class="navItem grow" href="#vision">Vision</a></li>
                 <li><a class="navItem grow" href="#features">Features</a></li>
@@ -88,7 +88,7 @@
         </script>
   <!-- END nav section -->
   <!-- START header section -->
-  <header>
+  <header class="baseDocMargin">
     
     <img class="services-header-img center" src="img/services-header.jpg" alt="Our services header image">
     <article class="myArticle">
@@ -102,87 +102,105 @@
           euismod facilisis iaculis.
         </p>
     </article>
-    <hr class="myhr">
+    
   </header>
   <!-- END header section -->
+  <hr class="myhr">
+
+  <!-- Here in this flex layout there is a main container with default flex layout, 
+    it holds two containers , each in flex column layout. -->
   
-  <section class="gridContainer">
-      
-    <article class="card">
-      <h4>Digital Design</h4>
-      <p>
-          Nulla suscipit interdum diam at maximus. Proin vitae tellus rutrum, accumsan nunc sit amet, iaculis tortor. Mauris consectetur feugiat justo quis aliquet. Curabitur cursus et justo eu consequat. Fusce finibus sem neque, sed faucibus nibh pellentesque
-          eleifend. Mauris euismod facilisis iaculis.
-      </p>
-      <a class="myBtn" href="">Learn More</a>
-    </article>
-    
-    <article class="card">
-      <h4>UX / UI</h4>
-      <p>
-        Nulla suscipit interdum diam at maximus. Proin vitae tellus rutrum, accumsan nunc sit amet, iaculis tortor. Mauris consectetur feugiat justo quis aliquet. Curabitur cursus et justo eu consequat. Fusce finibus sem neque, sed faucibus nibh pellentesque
-        eleifend. Mauris euismod facilisis iaculis.
-      </p>   
-      <a class="myBtn" href="">Learn More</a>
-    </article>
-  
-    <article class="card">
-      <h4>Digital Marketing</h4> 
-      <p>
-        Nulla suscipit interdum diam at maximus. Proin vitae tellus rutrum, accumsan nunc sit amet, iaculis tortor. Mauris consectetur feugiat justo quis aliquet. Curabitur cursus et justo eu consequat. Fusce finibus sem neque, sed faucibus nibh pellentesque
-        eleifend. Mauris euismod facilisis iaculis.
-      </p>
-      <a class="myBtn" href="">Learn More</a>
-    </article>
-    
-    <article class="card">
-      <h4>Web Development</h4>
-      <p>
-          Nulla suscipit interdum diam at maximus. Proin vitae tellus rutrum, accumsan nunc sit amet, iaculis tortor. Mauris consectetur feugiat justo quis aliquet. Curabitur cursus et justo eu consequat. Fusce finibus sem neque, sed faucibus nibh pellentesque
-          eleifend. Mauris euismod facilisis iaculis.
-      </p>
-      <a class="myBtn" href="">Learn More</a>
-    </article>
-    
-    <article class="card">
-        <h4>iOS Development</h4>
+    <section class="flexContainer baseDocMargin">             <!--Main flex container for grid like card layout-->
+    <section class="flexColumnContainer flexItem leftMainColumn">       <!--First of two flex column layout-->
+      <article class="card twoColFlexItem defaultFlexMargin defaultFlexPadding">
+        <h4>Digital Design</h4>
         <p>
             Nulla suscipit interdum diam at maximus. Proin vitae tellus rutrum, accumsan nunc sit amet, iaculis tortor. Mauris consectetur feugiat justo quis aliquet. Curabitur cursus et justo eu consequat. Fusce finibus sem neque, sed faucibus nibh pellentesque
             eleifend. Mauris euismod facilisis iaculis.
-        </p> 
-      <a class="myBtn" href="">Learn More</a>
-    </article>
-    
-    <article class="card">
-      <h4>Android Development</h4>
-      <p>
-          Nulla suscipit interdum diam at maximus. Proin vitae tellus rutrum, accumsan nunc sit amet, iaculis tortor. Mauris consectetur feugiat justo quis aliquet. Curabitur cursus et justo eu consequat. Fusce finibus sem neque, sed faucibus nibh pellentesque
-          eleifend. Mauris euismod facilisis iaculis.
-      </p>  
-      <a class="myBtn" href="">Learn More</a>
-    </article>
-  </section>
+        </p>
+        <br>
+        <a class="myBtn" href="">Learn More</a>
+      </article>
+      
+      <article class="card twoColFlexItem defaultFlexMargin defaultFlexPadding">
+          <h4>Digital Marketing</h4> 
+          <p>
+            Nulla suscipit interdum diam at maximus. Proin vitae tellus rutrum, accumsan nunc sit amet, iaculis tortor. Mauris consectetur feugiat justo quis aliquet. Curabitur cursus et justo eu consequat. Fusce finibus sem neque, sed faucibus nibh pellentesque
+            eleifend. Mauris euismod facilisis iaculis.
+          </p>
+          <br>
+          <a class="myBtn" href="">Learn More</a>
+        </article>
 
-  <footer>
-    <article>
+        <article class="card twoColFlexItem defaultFlexMargin defaultFlexPadding">
+            <h4>iOS Development</h4>
+            <p>
+                Nulla suscipit interdum diam at maximus. Proin vitae tellus rutrum, accumsan nunc sit amet, iaculis tortor. Mauris consectetur feugiat justo quis aliquet. Curabitur cursus et justo eu consequat. Fusce finibus sem neque, sed faucibus nibh pellentesque
+                eleifend. Mauris euismod facilisis iaculis.
+            </p> 
+            <br>
+          <a class="myBtn" href="">Learn More</a>
+        </article>
+    </section>          <!--First of two flex column layout-->
+    
+    <section class="flexColumnContainer flexItem rightMainColumn">         <!--Second of two flex column layout-->
+      <article class="card twoColFlexItem defaultFlexMargin defaultFlexPadding">
+          <h4>UX / UI</h4>
+          <p>
+            Nulla suscipit interdum diam at maximus. Proin vitae tellus rutrum, accumsan nunc sit amet, iaculis tortor. Mauris consectetur feugiat justo quis aliquet. Curabitur cursus et justo eu consequat. Fusce finibus sem neque, sed faucibus nibh pellentesque
+            eleifend. Mauris euismod facilisis iaculis.
+          </p> 
+          <br>  
+          <a class="myBtn" href="">Learn More</a>
+        </article>
+      
+      <article class="card twoColFlexItem defaultFlexMargin defaultFlexPadding">
+        <h4>Web Development</h4>
+        <p>
+            Nulla suscipit interdum diam at maximus. Proin vitae tellus rutrum, accumsan nunc sit amet, iaculis tortor. Mauris consectetur feugiat justo quis aliquet. Curabitur cursus et justo eu consequat. Fusce finibus sem neque, sed faucibus nibh pellentesque
+            eleifend. Mauris euismod facilisis iaculis.
+        </p>
+        <br>
+        <a class="myBtn" href="">Learn More</a>
+      </article>
+      
+      <article class="card twoColFlexItem defaultFlexMargin defaultFlexPadding">
+        <h4>Android Development</h4>
+        <p>
+            Nulla suscipit interdum diam at maximus. Proin vitae tellus rutrum, accumsan nunc sit amet, iaculis tortor. Mauris consectetur feugiat justo quis aliquet. Curabitur cursus et justo eu consequat. Fusce finibus sem neque, sed faucibus nibh pellentesque
+            eleifend. Mauris euismod facilisis iaculis.
+        </p>  
+        <br>
+        <a class="myBtn" href="">Learn More</a>
+      </article>
+    </section>          <!--Second of two flex column layout-->
+  </section>          <!--Main flex container for grid like card layout-->
+    
+  <hr class="myhr">
+  <footer class="flexContainer baseDocMargin">
+    <article class="myArticle flexItem defaultFlexPadding flexLeftTest">
       <h4>Some Facts About Our Services</h4>
 
       <p>
           Nulla suscipit interdum diam at maximus. Proin vitae tellus rutrum, accumsan nunc sit amet, iaculis tortor. Mauris consectetur feugiat justo quis aliquet. Curabitur cursus et justo eu consequat. Fusce finibus sem neque, sed faucibus nibh pellentesque
           eleifend. Mauris euismod facilisis iaculis.
       </p>
-    </article>
+    <br><br>
     <ul>
       <li>Awesome thing</li>
       <li>Amazing thing</li>
       <li>Cool thing</li>
       <li>Great thing</li>
     </ul>
+  </article>
 
-    <img class="services-info-img" src="img/services-info.png" alt="one of our employees hard at work">
+    <img class="services-info-img flexItem bottomRightPic" src="img/services-info.png" alt="one of our employees hard at work">
 
-    Copyright Great Idea! 2018
-  </footer>
+    </footer>
+    <span class="flexContainer">
+      <p class="flexCenterTest">Copyright Great Idea! 2018</p>
+    </span>
+  
 </main>
 </body>
 
