@@ -2,6 +2,10 @@ main{
     
 }
 
+.topNav{
+    margin-top: 10px;
+}
+
 .services-info-img{
     padding-top: 0px;
    
@@ -152,6 +156,8 @@ footer li{
     .flexItem{
         flex: 1;   
     }
+
+    
 
     
 }
